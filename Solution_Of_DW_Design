@@ -1,0 +1,64 @@
+Dimension
+
+Store Dimension:
+1 Store ID-PK(Identity)-Surrogate
+2 Store Name
+3 Store Address
+4 Phone Number
+5 Store Number-Business Key
+
+Branch Dimension:
+1 Branch ID-PK(Identity)-Surrogate
+2 Branch Name
+3 Branch Number-Business Key
+
+Product Dimension:
+1 Product ID-PK(Identity)-Surrogate
+2 Product Name
+3 Product Number-Business Key
+4 Product Sub ID(FK)
+
+Product Subcategory Dimension:
+1 Product Sub ID-PK(Identity)-Surrogate
+2 Product Name
+3 Product Sub Number-Business Key
+4 Product Cat ID(FK)
+
+Product Category Dimension:
+1 Product Cat ID-PK(Identity)-Surrogate
+2 Product Cat Name
+3 Product Cat Number-Business Key
+
+Date Dimension
+1 DateKey-PK-Surrogate
+2 Date
+3 Year
+
+Sales Person Dimension
+1 Sales Person ID-PK(Identity)-Surrogate
+2 Sales Person Name
+3 Sales Person-Business Key
+
+Customer Dimension
+1 Customer ID-PK(Identity)-Surrogate
+2 Customer Name
+3 Customer Name-Business Key
+4 Phone Number
+
+Payment Method Dimension
+1 Payment ID-PK(Identity)-Surrogate
+2 Payment Type
+3 Payment Code-Business Kye
+
+Denormalise
+Fact Sales:
+1 Sales ID-PK-Identity column
+2 Store ID
+3 Branch ID
+4 Product ID
+5 Payment ID
+6 Date ID
+7 Sales Person ID
+8 Customer ID
+9 Amount
+10 Qty
